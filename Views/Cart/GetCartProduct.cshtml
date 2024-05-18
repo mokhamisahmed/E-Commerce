@@ -1,0 +1,304 @@
+﻿@model List<E_Commerce_WebSite.Models.Product> 
+  @using System.Security.Claims;
+
+@{
+    var counter=1;
+
+                String  Set(string s,int counter){
+                 return s + counter;
+
+                          }
+
+
+
+
+                            }
+
+                             <!-- Single Page Header start -->
+        <div class="container-fluid page-header py-5">
+            <h1 class="text-center text-white display-6">Cart</h1>
+            
+        </div>
+        <!-- Single Page Header End -->
+
+
+        <input value="@User.FindFirst(ClaimTypes.NameIdentifier).Value" type="hidden" id="userId"/>
+
+
+<!-- Cart Page Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Products</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Handle</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                           
+                           
+                    @if (Model!= null)
+                    {
+
+
+                       
+
+                        @foreach (var product in Model)
+                        {
+
+
+
+                            <tr>
+                                <th scope="row">
+                                    <div class="d-flex align-items-center">
+                                        <img src="@product.Image_path" class="img-fluid me-5 rounded-circle" style="width: 80px; height: 80px;" alt="">
+                                    </div>
+                                </th>
+                                <td>
+                                    <input type="hidden" value="@product.Id" id="@Set("id",counter)">
+                                    <p class="mb-0 mt-4" id="@Set("Name",counter)">@product.Name</p>
+                                </td>
+                                <td>
+                                    <p class="mb-0 mt-4 price" id="@Set("price",counter)">@product.price</p>
+                                </td>
+                                <td>
+                                    <div class="input-group quantity mt-4" style="width: 100px;">
+                                        
+                                        <input type="number" data-counter="@counter" oninput="test(@counter)" class="form-control form-control-bg text-center border-0 " id="@counter" value="0" min="0" max="@product.Quantity">
+                                        
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="mb-0 mt-4   " id="@Set("total",@counter)">0</p>
+                                </td>
+                                <td>
+                                    <button class="btn btn-md rounded-circle bg-light border mt-4" >
+                                        <i class="fa fa-times text-danger"></i>
+                                    </button>
+                                </td>
+
+                            </tr>
+                            
+                              
+                                counter++;
+                               
+                           
+                        }
+                    }else{
+                    
+                    <tr>
+
+                        <td>
+                            <div class="alert alert-warning">there is no product added to cart </div>
+                        </td>
+                    </tr>
+                    
+                    }
+
+                           
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-5">
+                    <button  id="apply" class="btn border-secondary rounded-pill px-4 py-3 text-primary" type="button">Apply Order</button>
+                </div>
+                <div class="row g-4 justify-content-end">
+                    <div class="col-8"></div>
+                    <div class="col-sm-8 col-md-7 col-lg-6 col-xl-4">
+                        <div class="bg-light rounded">
+                            <div class="p-4">
+                                <h1 class="display-6 mb-4">Cart <span class="fw-normal">Total</span></h1>
+                                <div class="d-flex justify-content-between mb-4">
+                                    <h5 class="mb-0 me-4">Subtotal:</h5>
+                                    <p class="mb-0">$96.00</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="mb-0 me-4">Shipping</h5>
+                                    <div class="">
+                                        <p class="mb-0">Flat rate: $3.00</p>
+                                    </div>
+                                </div>
+                                <p class="mb-0 text-end">Shipping to Ukraine.</p>
+                            </div>
+                            <div class="py-4 mb-4 border-top border-bottom d-flex justify-content-between">
+                                <h5 class="mb-0 ps-4 me-4">Total</h5>
+                                <p class="mb-0 pe-4" id="total_orders">0</p>
+                            </div>
+                            <button  class="btn border-secondary rounded-pill px-4 py-3 text-primary text-uppercase mb-4 ms-4" type="button" id="check">Proceed Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <input type="hidden" data-test="@counter" class="counter" />
+        <button class="test">
+            test
+
+        </button>
+        <!-- Cart Page End -->
+
+        <script>
+
+               var t;
+                function test(counter){
+                   
+                     t=$("#price"+counter).text()*$("#"+counter).val();
+                   
+                    
+                    console.log($("#price"+counter).text());
+                    console.log($("#"+counter).val());
+                    console.log(t+"$");
+                  $("#total"+counter).text(t);
+
+                    
+                   
+
+                  
+
+                 
+                    
+                }
+
+
+                
+
+
+            $(document).ready(
+            function(){
+
+
+
+                 var total=0;
+
+                  var list=[];
+
+
+                  $("#check").click(
+                  function(){
+                      console.log("clicked");
+                 
+                      if(total==0){
+
+                      
+
+                           var length=$('.counter').data('test')-1;
+                       for(var i=1;i<=length;i++){
+
+                total+=parseFloat($("#total"+i).text());
+
+                console.log($("#total"+i).text());
+                   console.log(parseFloat($("#total"+i).text()));
+                  }
+                  console.log(total)
+
+                  $("#total_orders").text(total);
+
+                 
+                      }else{
+                      total=0;
+                      
+                           var length=$('.counter').data('test')-1;
+                       for(var i=1;i<=length;i++){
+
+                total+=parseFloat($("#total"+i).text());
+
+                console.log($("#total"+i).text());
+                   console.log(parseFloat($("#total"+i).text()));
+                  }
+                  console.log(total)
+
+                  $("#total_orders").text(total);
+
+
+
+                      }
+                  }
+                  
+                  );
+
+
+                $("#apply").click(
+                function(){
+
+                     alert("do you want to apply");
+
+                        var length=$('.counter').data('test')-1;
+
+                  for(var i=1;i<=length;i++){
+
+                      var obj={productId:$("#id"+i).val(),price:parseFloat($("#price"+i).text()),Quantity:parseInt($("#"+i).val()),total_price:parseInt($("#total"+i).text())};
+
+                     list.push(obj);
+
+                    
+                  }
+
+
+                     if(list!=null){
+
+
+                         var obj={orderItems:list,total_price:total,userId:$("#userId").val()}
+                        $.ajax({
+                         data:obj,
+                         type:"post",
+                         url:"/Order/MakeOrder",
+                         success:function(){
+                             console.log("done");
+                           
+                         },
+                         error:function(error){
+                             console.log(error);
+                         }
+
+
+
+
+                     });
+                     }else{
+
+                         alert("please make an order");
+                     }
+                  
+                     
+
+                }
+                
+                
+                );
+
+
+
+
+
+
+
+              $(".test").click(
+              function(){
+                
+               
+
+                   console.log(list);
+                
+
+
+
+              }
+              
+              );
+             
+            }
+            
+            );
+
+
+
+
+        </script>

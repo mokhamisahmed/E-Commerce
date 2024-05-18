@@ -1,0 +1,160 @@
+﻿@model E_Commerce_WebSite.ViewModel.UserView
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add User</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+       <div class="modal-body">
+        <form id="CreateForm" asp-action="SignUp" >
+       
+          <div class="mb-3">
+            <label for="Name" class="form-label">UserName</label>
+            <input type="text" class="form-control" id="username" name="UserName">
+
+             <label for="Email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="Email">
+
+             <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control"  id="password" name="Password">
+
+            <label for="Address" class="form-label">Address</label>
+            <input type="text" class="form-control" id="address" name="Address">
+             
+           
+
+
+            <select name="role_id" class="form-control">
+
+                <option value="">Select Role</option>
+                @if(Model.roles!=null){
+              @foreach(var role in Model.roles){
+                  <option value="@role.Id"> @role.Name </option>
+              }
+                }
+                </select>
+
+
+          </div>
+          <button type="submit" class="btn btn-primary">Save Changes</button>
+        </form>
+        </div>
+     
+    </div>
+  </div>
+</div>
+
+
+   <!-- Single Page Header start -->
+        <div class="container-fluid page-header py-5">
+            <h1 class="text-center text-white display-6">SignUp</h1>
+            
+        </div>
+        <!-- Single Page Header End -->
+
+         <!-- Button trigger modal -->
+<div class="container mt-5">
+    <div class="text-center"> <!-- مركز الزر داخل هذا العنصر -->
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Product</button>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Users</h2>
+    @if (Model.userWithRoles !=null)
+    {
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                  
+                    <th>UserName</th>
+                    <th>Email</th>
+                    <th>RoleName</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model.userWithRoles)
+                {
+                    <tr>
+                        <td>@user.user.UserName</td>
+                         
+                        <td>@user.user.Email</td>
+
+                        <td>@user.role.Name</td>
+
+                       
+
+                        <td>
+                            <button type="button" class="btn btn-outline-primary btn-sm edit-btn" data-toggle="modal" data-target="#editModal"  >Edit</button>
+                            <button type="button" class="btn btn-outline-danger btn-sm delete-btn" data-toggle="modal" data-target="#deleteModal">Delete</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="alert alert-warning text-center" role="alert">
+            There is no users
+        </div>
+    }
+</div>
+
+<!-- Edit Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editModalLabel">Edit Category</h5>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="editForm" asp-action="Edit" enctype="multipart/form-data">
+          <input type="hidden" id="categoryId" name="Id">
+          <div class="mb-3">
+            <label for="categoryName" class="form-label">Category Name</label>
+            <input type="text" class="form-control" id="categoryName" name="Name">
+          </div>
+          <button type="submit" class="btn btn-primary">Save Changes</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Delete Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteModalLabel">Delete Category</h5>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="deleteForm" asp-action="Delete" enctype="multipart/form-data">
+          <input type="hidden" id="deleteCategoryId" name="id">
+          <div class="alert alert-danger" role="alert">
+            Are you sure you want to delete this category?
+          </div>
+          <button type="submit" class="btn btn-danger">Yes</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Your custom script goes here -->
+<script>
+    // JavaScript code if needed
+</script>
+
+
+

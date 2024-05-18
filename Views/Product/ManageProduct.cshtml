@@ -1,0 +1,237 @@
+﻿@model E_Commerce_WebSite.ViewModel.ProductViewModel
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Product</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+       <div class="modal-body">
+        <form id="CreateForm" asp-action="AddProduct" enctype="multipart/form-data" >
+       
+          <div class="mb-3">
+            <label for="productName" class="form-label">Product Name</label>
+            <input type="text" class="form-control" id="productName" name="Name">
+             <label for="quantity" class="form-label">Quantity</label>
+            <input type="number" class="form-control" id="quantity" name="Quantity">
+
+             <label for="unit" class="form-label">Unit</label>
+            <input type="text" class="form-control" id="unit" name="Unit">
+
+              <label for="price" class="form-label">Price</label>
+            <input type="number" class="form-control" id="price" name="Price" step="0.01">
+
+              <label for="DiscountValue" class="form-label">DiscountValue</label>
+            <input type="number" class="form-control" id="DiscountValue" name="DiscountValue" step="0.01">
+
+
+            <label for="Image" class="form-label">Image</label>
+        <input type="file" name="file"  class="form-control-file " id="Image">
+
+
+            <select name=categoryId class="form-control">
+
+                <option value="">Select Category</option>
+                @if(Model.categories!=null){
+              @foreach(var category in Model.categories){
+                  <option value="@category.Id"> @category.Name </option>
+              }
+                }
+                </select>
+
+
+          </div>
+          <button type="submit" class="btn btn-primary">Save Changes</button>
+        </form>
+        </div>
+     
+    </div>
+  </div>
+</div>
+
+
+   <!-- Single Page Header start -->
+        <div class="container-fluid page-header py-5">
+            <h1 class="text-center text-white display-6">Cart</h1>
+            
+        </div>
+        <!-- Single Page Header End -->
+
+         <!-- Button trigger modal -->
+<div class="container mt-5">
+    <div class="text-center"> <!-- مركز الزر داخل هذا العنصر -->
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Product</button>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Product Data</h2>
+    @if (Model.products.Count != 0)
+    {
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Unit</th>
+                    <th>Price</th>
+                    <th>DiscountValue</th>
+                    <th>AfterDiscount</th>
+                    <th>DiscountStatus</th>
+                    <th>CategoryName</th>
+                    <th>Product Image</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model.products)
+                {
+                    <tr>
+                        <td>@product.Id</td>
+                        <td>@product.Name</td>
+                         <td>@product.Quantity</td>
+                          <td>@product.Unit</td>
+                           <td>@product.price</td>
+                            <td>@product.DiscountValue</td>
+                            <td>@product.priceAfterDiscount</td>
+                           
+                             <td>@product.StatusDiscount</td>
+                            <td>@product.category.Name</td>
+                            <td><img src="@Url.Content(@product.Image_path)" width="100" heigth="50"></td>
+
+                        <td>
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#editModal" id="edit" data-unit="@product.Unit" data-name="@product.Name" data-quantity="@product.Quantity" data-price="@product.price" data-discountvalue="@product.DiscountValue" data-priceafter="@product.priceAfterDiscount" data-status="@product.StatusDiscount" >Edit</button>
+                           
+                       <button type="button" class="btn btn-outline-danger btn-sm delete-btn" data-toggle="modal" data-target="#deleteModal">Delete</button>
+                             
+                        
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="alert alert-warning text-center" role="alert">
+            There are no products available.
+        </div>
+    }
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Product</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+       <div class="modal-body">
+        <form id="CreateForm" asp-action="AddProduct" enctype="multipart/form-data" >
+       
+          <div class="mb-3">
+            <label for="productName" class="form-label">Product Name</label>
+            <input type="text" class="form-control" id="name" name="Name">
+             <label for="quantity" class="form-label">Quantity</label>
+            <input type="number" class="form-control" id="quantity" name="Quantity">
+
+             <label for="unit" class="form-label">Unit</label>
+            <input type="text" class="form-control" id="unit" name="Unit">
+
+              <label for="price" class="form-label">Price</label>
+            <input type="number" class="form-control" id="price" name="Price" step="0.01" >
+             
+             <label for="dicountvalue" class="form-label">dicountvalue</label>
+            <input type="number" class="form-control" id="dicountvalue" name="DiscountValue" step="0.01" >
+             
+
+         
+      
+
+           
+
+          
+
+          </div>
+          <button type="submit" class="btn btn-primary">Save Changes</button>
+        </form>
+        </div>
+     
+    </div>
+  </div>
+</div>
+
+
+<!-- Delete Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="deleteModalLabel">Delete Category</h5>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="deleteForm" asp-action="Delete" enctype="multipart/form-data">
+          <input type="hidden" id="deleteCategoryId" name="id">
+          <div class="alert alert-danger" role="alert">
+            Are you sure you want to delete this category?
+          </div>
+          <button type="submit" class="btn btn-danger">Yes</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(
+function(){
+    $("#edit").click(
+    function(){
+
+     var n=$(this).data('name');   
+     $("#name").val(n);
+      var q=  $(this).data('quantity');
+      $("#quantity").val(p);
+         var p=$(this).data('price'); 
+         $("#price").val(p);
+
+          var u=$(this).data('unit'); 
+         $("#unit").val(u);
+    console.log(n);
+      console.log(q);
+        console.log(p);
+         console.log(u);
+
+    
+    }
+    
+    );
+
+}
+
+
+);
+
+
+</script>
+
+
+
+
+
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Your custom script goes here -->
+<script>
+    // JavaScript code if needed
+</script>
+
+
+

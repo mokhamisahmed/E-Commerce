@@ -1,0 +1,58 @@
+﻿@model List<E_Commerce_WebSite.Models.Order>
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Product Data</h2>
+    @if (Model != null)
+    {
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>OrderDate</th>
+                    <th>total_price</th>
+                    <th>Status</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model)
+                {
+                    <tr>
+                        <td>
+                            @order.Id
+                        </td>
+                        <td>
+                            @order.Order_Date
+                        </td>
+                        <td>
+                            @order.totalAmount
+                        </td>
+                        @if(!@order.isAccept){
+                          <td>
+                              Accept Waiting
+                          </td>  
+
+                           } else
+                            {
+                                if (!order.isDeliver)
+                                {
+                                    <td>your order will deliverd in 12 hours</td>
+                                }
+                                else
+                                {
+                                    <td>Delivered</td>
+                                }
+                            }
+                      
+                     
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="alert alert-warning text-center" role="alert">
+            There are no products available.
+        </div>
+    }
+</div>

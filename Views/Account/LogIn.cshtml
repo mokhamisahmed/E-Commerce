@@ -1,0 +1,27 @@
+﻿
+ <div class="container-fluid page-header py-5">
+            <h1 class="text-center text-white display-6">SignUp</h1>
+            
+        </div>
+<!-- Login Form Start -->
+<section class="login-form-area">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="login-form">
+                    <form asp-action="LogIn" >
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Email</label>
+                            <input type="text" name="Email" class="form-control form-control-lg" id="email" placeholder="Enter Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" name="Password" class="form-control form-control-lg" id="password" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

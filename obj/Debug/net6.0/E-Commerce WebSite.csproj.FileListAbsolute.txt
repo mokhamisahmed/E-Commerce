@@ -1,0 +1,91 @@
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\appsettings.json
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\E-Commerce WebSite.staticwebassets.runtime.json
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\E-Commerce WebSite.exe
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\E-Commerce WebSite.deps.json
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\E-Commerce WebSite.runtimeconfig.json
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\E-Commerce WebSite.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\E-Commerce WebSite.pdb
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\obj\Debug\net6.0\E-Commerce WebSite.csproj.AssemblyReference.cache
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\obj\Debug\net6.0\E-Commerce WebSite.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\obj\Debug\net6.0\E-Commerce WebSite.AssemblyInfoInputs.cache
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\obj\Debug\net6.0\E-Commerce WebSite.AssemblyInfo.cs
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\obj\Debug\net6.0\E-Commerce WebSite.csproj.CoreCompileInputs.cache
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\obj\Debug\net6.0\E-Commerce WebSite.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\obj\Debug\net6.0\E-Commerce WebSite.RazorAssemblyInfo.cache
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\obj\Debug\net6.0\E-Commerce WebSite.RazorAssemblyInfo.cs
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\obj\Debug\net6.0\scopedcss\bundle\E-Commerce WebSite.styles.css
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\obj\Debug\net6.0\scopedcss\projectbundle\E-Commerce WebSite.bundle.scp.css
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\obj\Debug\net6.0\E-Commerce WebSite.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\obj\Debug\net6.0\refint\E-Commerce WebSite.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\obj\Debug\net6.0\E-Commerce WebSite.pdb
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\obj\Debug\net6.0\E-Commerce WebSite.genruntimeconfig.cache
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\obj\Debug\net6.0\ref\E-Commerce WebSite.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\obj\Debug\net6.0\E-Commerce WebSite.csproj.CopyComplete
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Humanizer.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\NanoChip\source\repos\E-Commerce WebSite\E-Commerce WebSite\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
